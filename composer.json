@@ -1,0 +1,20 @@
+{
+    "name": "econsulte/whatsapp-api-sdk",
+    "type": "sdk",
+    "require": {
+        "guzzlehttp/guzzle": "7.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Econsulte\\WhatsappApiSdk\\": "src/",
+            "Econsulte\\WhatsappApiSdk\\Son\\": "src/son/",
+            "Econsulte\\WhatsappApiSdk\\Contracts\\": "src/contracts/",
+            "Econsulte\\WhatsappApiSdk\\Exception\\": "src/exception/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Elvis Bomfim de Souza"
+        }
+    ]
+}
