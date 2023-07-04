@@ -1,5 +1,5 @@
 {
-    "name": "econsulte/whatsapp-api-sdk",
+    "name": "econsulte/whatsapp-business-php-sdk",
     "type": "sdk",
     "require": {
         "guzzlehttp/guzzle": "7.5"
