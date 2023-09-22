@@ -6,7 +6,7 @@ use GuzzleHttp\Client;
 use Econsulte\WhatsappApiSdk\Contracts\WhatsAppServiceInterface;
 use Econsulte\WhatsappApiSdk\Exception\WhatsAppBusinessException;
 
-class UploadImage implements WhatsAppServiceInterface{
+class UploadMidia implements WhatsAppServiceInterface{
 
     private $client;
 
@@ -15,7 +15,7 @@ class UploadImage implements WhatsAppServiceInterface{
         $this->client = $client;
     }
 
-    public function uploadImage($file)
+    public function uploadMidia($file)
     {
         try{
         $response = $this->client->request('POST', 'media', [
