@@ -28,12 +28,12 @@ class SendMediaMessageByURL implements WhatsAppServiceInterface
     {
         $config = [];
 
-        $config["{$type}"] = [
+        $config = [
             "link" => $url
         ];
 
         if (!empty($caption)) :
-            $config["{$type}"]['caption'] = $caption;
+            $config['caption'] = $caption;
         endif;
 
         try {
@@ -43,7 +43,7 @@ class SendMediaMessageByURL implements WhatsAppServiceInterface
                     "recipient_type" =>  "individual",
                     "to" => $to,
                     "type" => $type,
-                    $config
+                    $type => $config
                 ]
             ]);
 

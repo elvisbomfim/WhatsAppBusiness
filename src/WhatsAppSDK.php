@@ -21,7 +21,7 @@ use GuzzleHttp\Client;
  * @method RetrivedMedia retrivedMedia($media_id)
  * @method DownloadMedia downloadMedia($media_id)
  * @method UploadMidia uploadMidia($file)
- * @method SendMediaMessageByURL sendMediaMessageByURL(string $type,string $link)
+ * @method SendMediaMessageByURL sendMediaMessageByURL(string $to, string $type,string $link, string $caption = null)
  */
 class WhatsAppSDK
 {
