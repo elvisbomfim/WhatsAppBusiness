@@ -24,7 +24,7 @@ class SendMediaMessageByURL implements WhatsAppServiceInterface
      * @return mixed Os detalhes da resposta da API ou uma mensagem de erro em caso de exceção.
      * @throws WhatsAppBusinessException Se ocorrer um erro ao enviar a mensagem.
      */
-    public function sendMediaMessageByURL(string $type, string $url, $caption = null)
+    public function sendMediaMessageByURL(string $to, string $type, string $url, $caption = null)
     {
         $config = [];
 
@@ -41,6 +41,7 @@ class SendMediaMessageByURL implements WhatsAppServiceInterface
                 'json' => [
                     "messaging_product" => "whatsapp",
                     "recipient_type" =>  "individual",
+                    "to" => $to,
                     "type" => $type,
                     $config
                 ]
