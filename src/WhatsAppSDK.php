@@ -31,7 +31,7 @@ class WhatsAppSDK
     private $version;
 
 
-    public function __construct(string $token, string $phone_number_id, string $version = 'v15.0')
+    public function __construct(string $token, string $phone_number_id, string $version = 'v16.0')
     {
 
         $this->version = $version;
