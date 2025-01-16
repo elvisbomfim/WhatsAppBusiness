@@ -1,4 +1,4 @@
-## INSTALAÇÂO
+## INSTALAÇÃO
 
 ```````
 composer require econsulte/whatsapp-api-sdk
